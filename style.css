@@ -4,6 +4,10 @@
             font-size: medium;
             height: 100vh;
             width: 100vw;
+            /* avoid overflow of contents */
+            overflow: hidden;
+            max-width: 100%;
+            /* hide scroll bars */
             font-family: Helvetica, Arial, sans-serif;
         }
         
@@ -49,7 +53,7 @@
         .guessSubmit:hover:enabled {
             background-color: rgb(156, 126, 156);
             color: white;
-            height: 2.1rem;
+            /* height: 2.1rem; */
         }
         
         input[type="text"] {
